@@ -10,6 +10,7 @@ app.use(morgan('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(express.static('./styles'))
+app.use(express.static('./images'))
 
 app.set('views', './views')
 

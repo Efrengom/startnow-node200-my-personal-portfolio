@@ -16,6 +16,9 @@
     background-color: #ddd;
     color: black;
 }
+.topnav a:visited{
+    color: beige
+}
 
 body{
     background-color: antiquewhite;
@@ -103,4 +106,18 @@ body{
 .info{
     font-family: fantasy;
     font-size: 25px;
+    font-weight: -400;
+}
+
+a:visited{
+    color: rgb(169, 8, 255)
+}
+
+.screen{
+    height: 175px;
+    width:350px;
+}
+
+.link{
+    margin-left: 70px
 }
