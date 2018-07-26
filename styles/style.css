@@ -33,7 +33,7 @@ body{
 }
 
 .textstuff{
-    font-family: fantasy
+    font-family: 'Oswald', sans-serif
 }
 
 .profile{
@@ -48,23 +48,24 @@ body{
 
 .pic{
     margin: auto;
+    margin-bottom: 50px;
 }
 
 .intro{
-    margin-left: 12%;
-    font-family: fantasy;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
     font-size: 30px;
-    margin-top: 50px;
+    text-align: center
 }
 
 .con{
-    font-family: fantasy;
+    font-family: 'Oswald', sans-serif;
     font-size: 20px;
     margin-left: 30%;
 }
 
 .one{
-    font-family: fantasy;
+    font-family: 'Oswald', sans-serif;
     font-size: 40px;
     border-style: solid;
     border-width: 4px;
@@ -75,7 +76,7 @@ body{
 }
 
 .two{
-    font-family: fantasy;
+    font-family: 'Oswald', sans-serif;
     font-size: 40px;
     border-style: solid;
     border-width: 4px;
@@ -87,7 +88,7 @@ body{
 }
 
 .three{
-    font-family: fantasy;
+    font-family: 'Oswald', sans-serif;
     font-size: 40px;
     border-style: solid;
     border-width: 4px;
@@ -99,12 +100,12 @@ body{
 }
 
 .head{
-    font-family: fantasy;
+    font-family: 'Oswald', sans-serif;
     font-size: 60px;
 }
 
 .info{
-    font-family: fantasy;
+    font-family: 'Oswald', sans-serif;
     font-size: 25px;
     font-weight: lighter;
 }
