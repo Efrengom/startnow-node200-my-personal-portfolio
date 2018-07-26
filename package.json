@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Personal Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Efrengom/My-Personal-Portfolio.git"
+  },
+  "author": "Efren Gomez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Efrengom/My-Personal-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Efrengom/My-Personal-Portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "form-data": "^2.3.2",
+    "morgan": "^1.9.0"
+  }
+}

@@ -1,0 +1,106 @@
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+body{
+    background-color: antiquewhite;
+    background-image: linear-gradient(#1FA2FF, #12D8FA, #A6FFCB)
+}
+
+.form{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.textstuff{
+    font-family: fantasy
+}
+
+.profile{
+    height: 450px;
+    width: 430px;
+    border-style: solid;
+    border-radius: 350px;
+    border-width: 3px;
+    margin-left: 35%;
+    margin-top: 50px
+}
+
+.pic{
+    margin: auto;
+}
+
+.intro{
+    margin-left: 12%;
+    font-family: fantasy;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.con{
+    font-family: fantasy;
+    font-size: 20px;
+    margin-left: 30%;
+}
+
+.one{
+    font-family: fantasy;
+    font-size: 40px;
+    border-style: solid;
+    border-width: 4px;
+    padding: 15px;
+    background-image: linear-gradient(#A6FFCB, #12D8FA, #1FA2FF );
+    border-radius: 20px;
+
+}
+
+.two{
+    font-family: fantasy;
+    font-size: 40px;
+    border-style: solid;
+    border-width: 4px;
+    padding: 15px;
+    margin-top: 25px;
+    background-image: linear-gradient(#A6FFCB, #12D8FA, #1FA2FF );
+    border-radius: 20px;
+
+}
+
+.three{
+    font-family: fantasy;
+    font-size: 40px;
+    border-style: solid;
+    border-width: 4px;
+    padding: 15px;
+    margin-top: 25px;
+    background-image: linear-gradient(#A6FFCB, #12D8FA, #1FA2FF );
+    border-radius: 20px;
+
+}
+
+.head{
+    font-family: fantasy;
+    font-size: 60px;
+}
+
+.info{
+    font-family: fantasy;
+    font-size: 25px;
+}

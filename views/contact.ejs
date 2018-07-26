@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Contact Tom</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+        
+                <div class='topnav'>
+                    <a href='/'>Home</a>
+                    <a href='/about'>About</a>
+                    <a href='/contact'>Contact</a>
+                </div>
+                <div class="con"><h2 class="textstuff">Get in touch with me by filling out this form</h2></div>
+                <div>
+    <div class='form'>
+      <form action="/thanks" method="POST">
+        <label for="firstName" class='textstuff'>First Name:</label>
+        <input id="firstName" name="firstName" type="text">
+
+        <label for="lastName" class='textstuff'>Last Name:</label>
+        <input id="lastName" name="lastName" type="text">
+
+        <label for="email" class='textstuff'>Email:</label>
+        <input id="email" name="email" type="text">
+
+        <input type="submit" />
+      </form>
+      <script>  
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbyph7bkSZMh7Rglua-f0ZBHGJcsQnJ6QDbq_CpA5pHx_mbwUpuU/exec>'  
+        const form = document.forms['contact']  
+        form.addEventListener('submit', e => {  
+         e.preventDefault()  
+         fetch(scriptURL, { method: 'POST', body: new FormData(form)})  
+          .then(response => console.log('Success!', response))  
+          .catch(error => console.error('Error!', error.message))  
+        })  
+       </script>  
+    </div>
+  </body>
+</html>
