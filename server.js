@@ -2,6 +2,7 @@ const express = require('express')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const FormData = require('form-data')
+const port = process.env.PORT || 8080
 
 const app = express()
 
@@ -18,8 +19,8 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
-app.listen(8080, () => {
-    console.log('listening at http://localhost:8080')
+app.listen(port, () => {
+    console.log('listening at ports 8080')
 })
 
 app.get('/contact', (req, res) => {
