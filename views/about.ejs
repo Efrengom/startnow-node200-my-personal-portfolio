@@ -1,42 +1,76 @@
 <html>
-  <head>
+
+<head>
     <title>About</title>
     <link rel="stylesheet" href="style.css">
     <link href="//fonts.googleapis.com/css?family=Oswald&subset=latin" rel="stylesheet" type="text/css">
 
-  </head>
-  <body>
-        
-                <div class='topnav'>
-                    <a href='/'>Home</a>
-                    <a href='/about'>About</a>
-                    <a href='/contact'>Contact</a>
-                </div>
-                <div>
-    <div>
-      <h1 class="head">About Me</h1>
-      <p  class="info">My name is Efren. I was born and raised by first generation immigrants in Southern California, particularly in a small town named Moreno Valley.
-        Not much ever happened there, but it was home to the greatest teacher I've ever met. He was my physics teacher and he had a deep passion 
-        for creating things and making things happen. He infused that same passion into me.
-      </p>
+</head>
+
+<body>
+
+    <div class='topnav'>
+        <a href='/'>Home</a>
+        <a href='/about'>About</a>
+        <a href='/contact'>Contact</a>
+        <a href='https://github.com/Efrengom'>Github</a>
+        <a href='https://www.linkedin.com/in/efren-gomez-3a5a9a162/'>LinkedIn</a>
     </div>
-    <h1 class="head">Here's some of my previous work</h1>
     <div>
-        <div class="one">
-            <img src="Giphymon.PNG" class="screen"/>
-            <a href='https://hackathon-ugjhiwmtfs.now.sh/' class="link">Hackathon</a>
-            <p>A hackathon I made using two api calls. Search any pokemon and get thier stats plus gifs!</p>
+        <div>
+            <h1 class="head">About Me</h1>
+            <p class="info">My name is Efren. I was born and raised by first generation immigrants in Southern
+                California, particularly in
+                a small town named Moreno Valley. Not much ever happened there, but it was home to the greatest teacher
+                I've
+                ever met. He was my physics teacher and he had a deep passion for creating things and making things
+                happen.
+                He infused that same passion into me. Ever since then all I've wanted to do is beathe life into
+                creative
+                ideas.
+            </p>
         </div>
-        <div class="two">
-            <img src="VSTDA.PNG" class="screen"/>
-            <a href='https://eg-vstda.herokuapp.com/' class="link">Very Simple Todo App</a>
-            <p>As the name implies its a todo app! Input what you want to do and make a list you can edit later.</p>
+        <h1 class="head">Here's My blog</h1>
+        <div>
+            <div class="one">
+                <img src="OriginPHomepage.PNG" class="screen" />
+                <a href='https://origin-portal.herokuapp.com' class="link">Origin Portal</a>
+                <p>This was an inherited project from previous alumni of Origin Code Academy. Built using React, Redux and Loopback. 
+                    This was my first experience working on a team of people all working on the same project as well as using some sort of state 
+                    management for React, specifically Redux. Redux wasn't too difficult to grasp, however the biggest learning curve was the use of a snigle 
+                    repository between so many people. We had issues when some people would push up to our branch on Github and not rebase so work of other people would 
+                    be gone. Eventually we all learned the rules of working together and if we somehow still made mistakes we knew how to rewind our changes. My task for 
+                    the project specifically was to work on the student profile page, making sure the editing feature worked, to actually update that information.
+                </p>
+            </div>
+            <div class="two">
+                <img src="Giphymon.PNG" class="screen" />
+                <a href='https://hackathon-ugjhiwmtfs.now.sh/' class="link">Giphymon</a>
+                <p>A hackathon I did using two api calls and made in under 72 hours. It was actually my first experience having a time
+                    limit on the task I was to do and having to come up with an entire project myself. I had to think quickly on what two API's I would use
+                    and how to use those API's with their documentation. What I eventually settled on was using the Pokemon API and the Giphy API. I combined
+                    the two to make sort of a pokedex. A user will input a pokemon name and recieve stats for the pokemon as well as a whole bunch of gifs using
+                    the pokemon. It's not the greatest in terms of styling but I'm still pretty happy with what I managed to acomplish in the 3 days.
+                </p>
+            </div>
+            <div class="two">
+                <img src="VSTDA.PNG" class="screen" />
+                <a href='https://eg-vstda.herokuapp.com/' class="link">Very Simple Todo App</a>
+                <p>This was my first experience in react where I began passing state between multiple components. It's one of many developers beginning projects in React,
+                    a very simple todo app. At first I really struggled really figuring out how 
+                    state was passed, but after a couple hours, some extensive research and some video tutorials it all connected and I really understood how to pass state
+                    and then update it later on. I used the map method between components to display each todo item and the filter method to then delete them.
+                </p>
+            </div>
+            <div class="two">
+                <img src="Change.PNG" class="screen" />
+                <a href='https://eg-change-calculator.herokuapp.com/' class="link">Change Calculator</a>
+                <p>My very first React application. It's just a calculator that takes in two parameter: The price of the item and the money given. It then uses those numbers to 
+                    calculate the amount of change you should recieve back. This project taught me about state management in React. React stores all values in the state that can then be manipulated 
+                    and then uptated again. Very good stuff.
+                </p>
+            </div>
         </div>
-        <div class="three">
-            <img src="Change.PNG" class="screen"/>
-            <a href='https://eg-change-calculator.herokuapp.com/' class="link">Change Calculator</a>
-            <p>A simple change calculator. Imput a price and money given and it returns your change!</p>
-        </div>
-        </div>
-  </body>
+</body>
+
 </html>

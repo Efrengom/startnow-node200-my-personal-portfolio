@@ -21,8 +21,7 @@
 }
 
 body{
-    background-color: antiquewhite;
-    background-image: linear-gradient(#1FA2FF, #12D8FA, #A6FFCB)
+    background-color: #328CC1
 }
 
 .form{
@@ -34,6 +33,7 @@ body{
 
 .textstuff{
     font-family: 'Oswald', sans-serif
+
 }
 
 .profile{
@@ -61,7 +61,7 @@ body{
 .con{
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
-    margin-left: 30%;
+    text-align: center
 }
 
 .one{
@@ -121,4 +121,20 @@ a:visited{
 
 .link{
     margin-left: 70px
+}
+
+.flexbox-1{
+    justify-content: center
+}
+
+p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    border-style: solid;
+    border-width: 4px;
+    padding: 15px;
+    margin-top: 25px;
+    background-image: linear-gradient(#A6FFCB, #12D8FA, #1FA2FF );
+    border-radius: 20px;
+    text-align: center
 }
