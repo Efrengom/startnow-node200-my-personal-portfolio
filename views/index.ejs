@@ -4,6 +4,7 @@
     <title> Efren's Portfolio </title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|VT323" rel="stylesheet">
 
 </head>
 
@@ -12,25 +13,105 @@
         <a href='/'>Home</a>
         <a href='/about'>About</a>
         <a href='/contact'>Contact</a>
-        <a href='https://github.com/settings/profile'>Github</a>
+        <a href='https://github.com/efrengom'>Github</a>
         <a href='https://www.linkedin.com/in/efren-gomez-3a5a9a162/'>LinkedIn</a>
     </div>
+    <!-- <nav>
+        <a>Home</a>
+        <a>About</a>
+        <a>Contact</a>
+        <a>Github</a>
+        <a>LinkedIn</a>
+    </nav> -->
     <div class='flexbox-1'>
-        <div class="pic">
             <img src='https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/19554887_1571061989637635_2779297561443377549_n.jpg?_nc_cat=0&oh=f2c38ef705a265c0709d52c5d459be8a&oe=5C098822'
                 class="profile" />
-        </div>
     </div>
     <div class="intro">
-        <h3>
-            Hello! My name is Efren Gomez and welcome to my portfolio.
-        </h3>
+        <h3 class='part1'>Hello! My name is Efren Gomez and welcome to my portfolio. This website will be going through constant changes as I improve my talent. Feel free to look around and check me out!</h3>
     </div>
-    <div class="intro">
-        <h3>
-            This website will be going through constant changes as I improve my talent. Feel free to look around and check me out!
-        </h3>
-    </div>
+    <!-- <div class='textcontainer'>
+        <pre id="typewriter">
+            <span>Hello! My name is Efren Gomez and welcome to my</span>
+            <span>portfolio. This website will be going through </span>
+            <span>constant changes as I improve my talent.</span>
+            <span>Feel free to look around and check me out!</span>
+        </pre>
+    </div> -->
 </body>
+<script>
+
+    function setupTypewriter(t) {
+        var HTML = t.innerHTML;
+
+        t.innerHTML = "";
+
+        var cursorPosition = 0,
+            tag = "",
+            writingTag = false,
+            tagOpen = false,
+            typeSpeed = 100,
+        tempTypeSpeed = 0;
+
+        var type = function() {
+        
+            if (writingTag === true) {
+                tag += HTML[cursorPosition];
+            }
+
+            if (HTML[cursorPosition] === "<") {
+                tempTypeSpeed = 0;
+                if (tagOpen) {
+                    tagOpen = false;
+                    writingTag = true;
+                } else {
+                    tag = "";
+                    tagOpen = true;
+                    writingTag = true;
+                    tag += HTML[cursorPosition];
+                }
+            }
+            if (!writingTag && tagOpen) {
+                tag.innerHTML += HTML[cursorPosition];
+            }
+            if (!writingTag && !tagOpen) {
+                if (HTML[cursorPosition] === " ") {
+                    tempTypeSpeed = 0;
+                }
+                else {
+                    tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+                }
+                t.innerHTML += HTML[cursorPosition];
+            }
+            if (writingTag === true && HTML[cursorPosition] === ">") {
+                tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+                writingTag = false;
+                if (tagOpen) {
+                    var newSpan = document.createElement("span");
+                    t.appendChild(newSpan);
+                    newSpan.innerHTML = tag;
+                    tag = newSpan.firstChild;
+                }
+            }
+
+            cursorPosition += 1;
+            if (cursorPosition < HTML.length - 1) {
+                setTimeout(type, tempTypeSpeed);
+            }
+
+        };
+
+        return {
+            type: type
+        };
+    }
+
+    var typer = document.getElementById('typewriter');
+
+    typewriter = setupTypewriter(typewriter);
+
+    typewriter.type();
+
+</script>
 
 </html>

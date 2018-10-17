@@ -21,7 +21,7 @@
 }
 
 body{
-    background-color: #328CC1
+    background-image:url(darkness.png);background-repeat:repeat;
 }
 
 .form{
@@ -29,6 +29,8 @@ body{
     width: 50%;
     padding: 10px;
     margin-top: 50px;
+    color: aliceblue;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .textstuff{
@@ -49,10 +51,37 @@ body{
 
 .intro{
     margin-bottom: 5px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 40px;
-    text-align: center
+    margin-top: 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex: 1;
+    border: double;
+    border-radius: 15px;
+    border-width: 5px;
+    text-align: center;
+    background: black;
+    color: aliceblue;
+    /* animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite; 
+    border-right: .15em solid orange; */
+
 }
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  } 
 
 .con{
     font-family: 'Oswald', sans-serif;
@@ -140,8 +169,9 @@ a:visited{
     width:350px;
 }
 
-.flexbox-1{
-    align-content: center;
+.flexbox-1 img {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 p{
@@ -154,4 +184,42 @@ p{
     background-image: linear-gradient(#A6FFCB, #12D8FA, #1FA2FF );
     border-radius: 20px;
     text-align: center
+}
+
+.textcontainer{
+    display: flex;
+    flex: 1;
+}
+
+.var-highlight{
+    color: #C0AD60;
+}
+.string-highlight{
+    color: rgba(253, 149, 90, 0.8);
+}
+
+#typewriter{
+        font-size: 2em;
+        margin: 1;
+        font-family: 'Press Start 2P', cursive;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex:1;
+
+}
+
+@-webkit-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
