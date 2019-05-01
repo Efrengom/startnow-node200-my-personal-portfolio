@@ -4,114 +4,171 @@
     <title> Efren's Portfolio </title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|VT323" rel="stylesheet">
-
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 </head>
 
-<body>
-    <div class='topnav'>
-        <a href='/'>Home</a>
-        <a href='/about'>About</a>
-        <a href='/contact'>Contact</a>
-        <a href='https://github.com/efrengom'>Github</a>
-        <a href='https://www.linkedin.com/in/efren-gomez-3a5a9a162/'>LinkedIn</a>
+<body id="top">
+
+    <!-- -------------------------------------- -->
+    <header>
+        <h2><a href="#" target="_blank"><img id="logo" src="name.png" alt=""></a></h2>
+        <nav>
+            <ul>
+                <li><a href="#top">Top</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Projects</a></li>
+                <li><a href="#getting-around">Skills</a></li>
+                <!-- <li><a href="#famous-quotes">Quotes</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#social-media">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- -------------------------------------- -->
+
+    <div id="hero">
+        <div class="background-image"></div>
+        <h1>Welcome to my Website</h1>
+        <h3>Please have a look around</h3>
     </div>
-    <!-- <nav>
-        <a>Home</a>
-        <a>About</a>
-        <a>Contact</a>
-        <a>Github</a>
-        <a>LinkedIn</a>
-    </nav> -->
-    <div class='flexbox-1'>
-            <img src='cutmypic.png'
-                class="profile" />
+
+    <!-- -------------------------------------- -->
+
+    <div id="about">
+        <h3 class="title">About Me</h3>
+        <div id="two-cols">
+            <div class="about-img"><img src="about.jpg" alt="thumbs up"></div>
+            <div class="about-bio">
+                <p id="about-text">Hello, my name is Efren. I'm a huge lover of pretty much all things nerdy from from
+                    comics to movies
+                    to games. That same love brought me to the tech side of things and after some deliberation I
+                    finally decided to join a coding bootcamp. From there I learned so much and got to work on some
+                    really cool projects. It's even given me some great opportunities interning for some very cool
+                    companies. My goal for the future is to keep learning and become a great developer</p>
+            </div>
+            <p>&nbsp;</p>
+        </div>
+        <hr>
     </div>
-    <div class="intro">
-        <h3 class='part1'>Hello! My name is Efren Gomez and welcome to my portfolio. This website will be going through constant changes as I improve my talent. Feel free to look around and check me out!</h3>
+    <!-- -------------------------------------- -->
+
+    <div class="projects-intro">
+        <h3 class="title">Projects</h3>
+        <p>While some of the larger projects are no longer visible due to the closure of my bootcamp. I still learned
+            lots of valuable skills in the technologies used. Eventually they'll be replaced by some other better
+            projects but it's something to look at in the meantime to get a feel for what I can do. Click on any of
+            them to get a more detailed exxplanation of what's going on or my experience making them.</p>
+        <hr>
     </div>
-    <!-- <div class='textcontainer'>
-        <pre id="typewriter">
-            <span>Hello! My name is Efren Gomez and welcome to my</span>
-            <span>portfolio. This website will be going through </span>
-            <span>constant changes as I improve my talent.</span>
-            <span>Feel free to look around and check me out!</span>
-        </pre>
+    <div id="projects-container">
+        <a href="/portal"><img class='project-pic' src="OriginPHomepage.PNG" /></a>
+        <a href="/portal"><img class='project-pic' src="Change.PNG" /></a>
+        <a href="/giphymon"><img class='project-pic' src="Giphymon.PNG" /></a>
+        <a href="/portal"><img class='project-pic' src="VSTDA.PNG" /></a>
+    </div>
+    <hr>
+
+    <!-- -------------------------------------- -->
+
+    <div id="getting-around">
+        <h3 class="title">Skillset</h3>
+        <p>Before my time at Origin Code Academy I had taken a pre-bootcamp course from App Academy. I was taught the
+            basics of Javascript from console commands to iterating through arrays and the like. From there at Origin I
+            learned plenty of new skills that would make me into a fullstack developer such as React, Node, MongoDB as
+            well as some other skills to help me in an actual work environment such as agile workflow and Jira.
+        </p>
+        <ul class="grid">
+            <li><i class="fab fa-react ico"></i></i>
+                <h4>React</h4>
+                <p>This is where I feel most confortable having learned this well at my bootcamp, as well as using it
+                    in some bigger projects. Included with this is React-router and Redux.</p>
+            </li>
+            <li><i class="fab fa-js ico"></i></i>
+                <h4>Javascript</h4>
+                <p>Even without the cool React library, I love Javascript as a language. I've done countless exercises
+                    honing my skills. I've gotten to see how powerful Javascripy is.</p>
+            </li>
+            <li><i class="fab fa-html5 ico"></i></i>
+                <h4>CSS</h4>
+                <p>Many might not think the same, but working on the design of a page is my favorite. CSS allows me to
+                    make a page look exactly how I want it.</p>
+            </li>
+            <li><i class="fab fa-node ico"></i></i>
+                <h4>Node</h4>
+                <p>Node is such a great tool for any developer with it being the largest system of open source
+                    libraries. If I ever have a problem there is almost always a node module to help me get through it.</p>
+            </li>
+        </ul>
+        <hr>
+    </div>
+
+    <!-- -------------------------------------- -->
+    <!-- <div id="famous-quotes">
+        <hr>
+        <h3 class="title">What Others Our Saying</h3>
+        <p class="portrait"><img src="img/dickens.jpg" alt="Charles Dickens" class="portrait-photos"></p>
+        <p class="quote">&ldquo;No one is useless in this world who lightens the burden of it to anyone else.&rdquo;</p>
+        <p class="author">&mdash; Charles Dickens</p>
+        <p class="portrait"><img src="img/franklin.jpg" alt="Benjamin Franklin" class="portrait-photos"></p>
+        <p class="quote">&ldquo;An investment in knowledge pays the best interest.&rdquo;</p>
+        <p class="author">&mdash; Benjamin Franklin</p>
+        <p class="portrait"><img src="img/leonardo.jpg" alt="Leonardo da Vinci" class="portrait-photos"></p>
+        <p class="quote">&ldquo;Learning never exhausts the mind.&rdquo;</p>
+        <p class="author">&mdash; Leonardo da Vinci</p>
+        <hr>
     </div> -->
+    <!-- -------------------------------------- -->
+
+    <div id="contact">
+        <h3 class="title">My Location</h3>
+        <section class="flexbox-section">
+            <p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105943.89578206178!2d-117.26246636179093!3d33.921917125033936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dca109db19e29b%3A0xc3fab215a09b3f2c!2sMoreno+Valley%2C+CA!5e0!3m2!1sen!2sus!4v1555541244446!5m2!1sen!2sus"
+                    width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <p>Moreno Valley, CA <br>I live about halfway between LA and San Diego.<br> I am definitely willing to
+                    relocate however.</p>
+        </section>
+    </div>
+
+    <!-- -------------------------------------- -->
+
+    <div id="contact-form">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf5XMkJTvUDEuRQXsaKLFSw50rXBMhxyCkhImEpGMeqSU-EMQ/viewform?embedded=true"
+            width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+
+    <!-- -------------------------------------- -->
+    <footer id="social-media">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/efrengomez/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/Efrengom "><i class="fab fa-github-square"></i></a></li>
+            <li <a href="#"><i class="fas fa-file"></i></i></a></li>
+        </ul>
+        <!-- <p>&copy;<script>document.write(new Date().getFullYear());</script> It sure is fun create websites.</p> -->
+        <p>&ldquo; Tell me and I forget, teach me and I may remember, involve me and I learn.&rdquo; &mdash;Benjamin
+            Franklin</p>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top - 100
+                }, 900, 'swing', function () {
+                    window.location.hash = target - 100;
+                });
+            });
+        });
+    </script>
 </body>
-<script>
 
-    function setupTypewriter(t) {
-        var HTML = t.innerHTML;
-
-        t.innerHTML = "";
-
-        var cursorPosition = 0,
-            tag = "",
-            writingTag = false,
-            tagOpen = false,
-            typeSpeed = 100,
-        tempTypeSpeed = 0;
-
-        var type = function() {
-        
-            if (writingTag === true) {
-                tag += HTML[cursorPosition];
-            }
-
-            if (HTML[cursorPosition] === "<") {
-                tempTypeSpeed = 0;
-                if (tagOpen) {
-                    tagOpen = false;
-                    writingTag = true;
-                } else {
-                    tag = "";
-                    tagOpen = true;
-                    writingTag = true;
-                    tag += HTML[cursorPosition];
-                }
-            }
-            if (!writingTag && tagOpen) {
-                tag.innerHTML += HTML[cursorPosition];
-            }
-            if (!writingTag && !tagOpen) {
-                if (HTML[cursorPosition] === " ") {
-                    tempTypeSpeed = 0;
-                }
-                else {
-                    tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-                }
-                t.innerHTML += HTML[cursorPosition];
-            }
-            if (writingTag === true && HTML[cursorPosition] === ">") {
-                tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-                writingTag = false;
-                if (tagOpen) {
-                    var newSpan = document.createElement("span");
-                    t.appendChild(newSpan);
-                    newSpan.innerHTML = tag;
-                    tag = newSpan.firstChild;
-                }
-            }
-
-            cursorPosition += 1;
-            if (cursorPosition < HTML.length - 1) {
-                setTimeout(type, tempTypeSpeed);
-            }
-
-        };
-
-        return {
-            type: type
-        };
-    }
-
-    var typer = document.getElementById('typewriter');
-
-    typewriter = setupTypewriter(typewriter);
-
-    typewriter.type();
-
-</script>
 
 </html>

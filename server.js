@@ -31,6 +31,14 @@ app.get('/contact', (req, res) => {
   app.get('/about', (req, res) => {
     res.render('about')
   })
+
+  app.get('/portal', (req, res) => {
+    res.render('portal')
+  })
+
+  app.get('/giphymon', (req, res) => {
+    res.render('giphymon')
+  })
   
   app.post('/thanks', (req, res) => {
     const url = 'https://script.google.com/macros/s/AKfycbyph7bkSZMh7Rglua-f0ZBHGJcsQnJ6QDbq_CpA5pHx_mbwUpuU/exec';
