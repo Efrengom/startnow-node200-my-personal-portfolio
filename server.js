@@ -40,6 +40,14 @@ app.get('/contact', (req, res) => {
     res.render('giphymon')
   })
   
+  app.get('/change', (req, res) => {
+    res.render('change')
+  })
+
+  app.get('/VSTDA', (req, res) => {
+    res.render('VSTDA')
+  })
+  
   app.post('/thanks', (req, res) => {
     const url = 'https://script.google.com/macros/s/AKfycbyph7bkSZMh7Rglua-f0ZBHGJcsQnJ6QDbq_CpA5pHx_mbwUpuU/exec';
     const data = new FormData()
