@@ -409,6 +409,12 @@ header a {
     header h2 {
       margin-bottom: 15px;
     }
+    #navstuff{
+        font-size: 32px;
+    }
+    #efren{
+        width: 30%;
+    }
 }
 
 /*------------------- 
